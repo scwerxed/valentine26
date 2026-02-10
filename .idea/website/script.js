@@ -19,3 +19,24 @@ var love = setInterval(function(){
         }
     });
 },1400);
+
+$(document).ready(function() {
+    // Click ripple effect
+    $('.present-btn, .heart-btn').on('click', function(e) {
+        const btn = $(this);
+        const ripple = $('<span class="ripple"></span>');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+
+        ripple.css({
+            'width': size + 'px',
+            'height': size + 'px',
+            'left': (e.pageX - rect.left - size/2) + 'px',
+            'top': (e.pageY - rect.top - size/2) + 'px'
+        });
+
+        btn.append(ripple);
+
+        setTimeout(() => ripple.remove(), 600);
+    });
+});

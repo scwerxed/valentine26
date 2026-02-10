@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg_valentine {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7d02a8 0%, #a205b4 50%, #c91cdc 100%);
+    position: relative;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.main-header {
+    padding-top: 15%;
+    text-align: center;
+    color: lightgray;
+}

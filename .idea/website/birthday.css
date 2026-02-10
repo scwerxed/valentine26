@@ -961,7 +961,7 @@
 
     section:nth-child(2) {
         --color-highlight: var(--color-yellow);
-        --color-selector: var(--color-green);
+        --color-selector: var(--color-red);
         --image: url('https://assets.codepen.io/197359/flower-yellow.png');
         --margin-top: 10dvi;
     }

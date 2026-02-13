@@ -1,16 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Valentine YAY</title>
+    <meta charset="UTF-8"/>
+    <title>Valentine Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="valentine.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-<div class="bg_valentine">
-    <h1 class="main-header">Nanana, this is only available on the 14th!
-    😘
-    </h1>
+<div id="envelope-container">
+    <img src="envelope.png" alt="Envelope" id="envelope"/>
+    <p>♡ Letter for You ♡</p>
 </div>
 
+<div id="letter-container">
+    <div class="letter-window">
+        <h1 id="letter-title">Will you be my Valentine?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" alt=""/>
+
+        <div class="buttons" id="letter-buttons">
+            <img src="yes.png" class="btn yes-btn" alt="Yes"/>
+
+            <div class="no-wrapper">
+                <img src="no.png" class="btn no-btn" alt="No"/>
+            </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+            <strong>Valentine Date:</strong> My home, 6pm. Selfmade food and some music, dress cozy!
+        </p>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
